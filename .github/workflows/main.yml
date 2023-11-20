@@ -1,0 +1,13 @@
+name: Ejemplo de GitHub Action
+
+on:
+  repository_dispatch:
+    types: [custom-event]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Ejecutar trabajo
+      run: echo "El trabajo se ha ejecutado"
